@@ -29,6 +29,14 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem "react_on_rails", "~> 12.0"
+
+gem 'webpacker'
+
+# gem "shakapaker", "~> 0.1.0"
+
+gem "foreman", "~> 0.87.2"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -72,3 +80,4 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+gem "mini_racer", platforms: :ruby
