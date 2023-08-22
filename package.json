@@ -15,9 +15,9 @@
     "build": "webpack --config webpack.config.js"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.10",
-    "@babel/preset-env": "^7.22.10",
-    "@babel/preset-react": "^7.22.5",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^9.1.3",
     "esbuild-loader": "^4.0.1",
     "stylelint": "^13.13.1",
