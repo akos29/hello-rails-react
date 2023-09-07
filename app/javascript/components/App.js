@@ -1,21 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import store from './store';
-import Greeting from './components/Greeting';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Greeting from './Greeting';
 
-const Home = () => <div>Home Page</div>;
-
-function App() {
+const App = () => {
   return (
-    <Provider store={store}>
-      <Router>
-        <Switch>
-          <Route path="/" exact element={<Greeting/>} />
-        </Switch>
-      </Router>
-    </Provider>
+    <div>
+      HelloController
+      </div>
   );
-}
+};
 
 export default App;

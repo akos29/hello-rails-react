@@ -4,15 +4,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.2.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem 'rails', '~> 7.0.6'
+gem 'rails', '~> 7.0.7', '>= 7.0.7.1'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+# Use postgresql as the database for Active Record
+gem 'pg', '~> 1.1'
 
-gem 'pg', '~> 1.2'
+gem 'rubocop', '>= 1.0', '< 2.0'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
@@ -28,14 +28,6 @@ gem 'stimulus-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
-
-gem 'react_on_rails', '~> 12.0'
-
-gem 'webpacker'
-
-# gem "shakapaker", "~> 0.1.0"
-
-gem 'foreman', '~> 0.87.2'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -80,4 +72,3 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
-gem 'mini_racer', platforms: :ruby
